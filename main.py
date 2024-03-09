@@ -44,7 +44,7 @@ if __name__ == '__main__':
     id = '西湖'
     # url = input("请输入下载链接：")
     url = 'https://you.ctrip.com/sight/hangzhou14/49894.html'
-    i = 500
+    i = 50
 
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
