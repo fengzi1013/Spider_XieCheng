@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8980bd-cced-4d62-9ed8-c952d4884f39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Spider_XieCheng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spider_XieCheng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="2e8980bd-cced-4d62-9ed8-c952d4884f39" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +103,7 @@
       <updated>1684057325864</updated>
       <workItem from="1684057326998" duration="67000" />
       <workItem from="1684132622805" duration="6827000" />
-      <workItem from="1709945677223" duration="1727000" />
+      <workItem from="1709945677223" duration="2391000" />
     </task>
     <servers />
   </component>
