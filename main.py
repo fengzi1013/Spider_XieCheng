@@ -6,6 +6,7 @@
 @IDE ：PyCharm
 @Describe:爬取携程景点评论等信息
 """
+
 import time
 import re
 import random
@@ -39,8 +40,10 @@ def getData(driver, ddl1, j):
     print(f"共{int(ddl1)}页，第{j}页下载完成...")
 
 if __name__ == '__main__':
-    id = input("请输入景点名称：")
-    url = input("请输入下载链接：")
+    # id = input("请输入景点名称：")   #西湖
+    id = '西湖'
+    # url = input("请输入下载链接：")
+    url = 'https://you.ctrip.com/sight/hangzhou14/49894.html'
     i = 500
 
     options = webdriver.ChromeOptions()
@@ -48,6 +51,7 @@ if __name__ == '__main__':
     options.add_argument('--disable-gpu')
     options.add_argument('user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36')
     driver = webdriver.Chrome(chrome_options=options)
+    driver.maximize_window()
 
     try:
         driver.get(url)
@@ -65,7 +69,7 @@ if __name__ == '__main__':
             getData(driver, ddl1, j)  # 获取数据
             j += 1
             # 翻页
-            element = driver.find_element(By.CSS_SELECTOR, '.ant-pagination-next a')
+            element = driver.find_element(By.CSS_SELECTOR, '.ant-pagination-item-comment')
             element.click()
 
             if j == int(ddl1) +1 or j > i:
@@ -80,3 +84,7 @@ if __name__ == '__main__':
     data = pd.DataFrame({ "date": timeList, "ip属地": ip, "评分": scoreList, "comments": comments })
     data.to_csv(f"./data/result_{id}.csv", encoding='utf8')
     print("**********done***********")
+
+
+# 有问题可以直接视频留言！！！论文选题、修改等问题也可以！！！
+
