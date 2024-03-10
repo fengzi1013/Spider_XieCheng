@@ -69,7 +69,7 @@ if __name__ == '__main__':
             getData(driver, ddl1, j)  # 获取数据
             j += 1
             # 翻页
-            element = driver.find_element(By.CSS_SELECTOR, '.ant-pagination-item-comment')
+            element = driver.find_element(By.CSS_SELECTOR, '.ant-pagination-next')
             element.click()
 
             if j == int(ddl1) +1 or j > i:
